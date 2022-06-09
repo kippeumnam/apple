@@ -1,0 +1,9 @@
+:root {
+    --header: #f6f8fa;
+    --font-white: #fff;
+    --font-black: #222;
+    /* 아이콘내부bar */
+    --font-inner: #eef0f3;
+    --font-button: #21c531;
+    --font-footer: #2a3038;
+}
