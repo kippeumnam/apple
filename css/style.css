@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    display: none;
+    }
 :root {
     /* nav */
     --nav-hover-blue: #06c;
@@ -6,23 +9,21 @@
     /* main */
     --main-black: #000;
     --main-white: #fff;
-    --button-blue: #0071E3
-    --more: #2997ff
-    /* article */
-    --arcticle-black: #1D1D1F
-    --arcticle-more:#0066cc
-    /* footer */
-    --footer-policy: #6E6E73;
+    --button-blue: #0071E3 --more: #2997ff
+        /* article */
+        --arcticle-black: #1D1D1F --arcticle-more:#0066cc
+        /* footer */
+        --footer-policy: #6E6E73;
     --footer-black: #1D1D1F;
     --footer: #424245;
 }
-
+/* nav 시작 */
 .header-container {
     display: flex;
-    max-width:1000vh;
+    max-width: 1000vh;
     flex-direction: row;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #313132;
     height: 44px;
@@ -34,11 +35,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
-    padding: 10px 70px 10px 0;
+    /* padding: 10px 0 10px 0; */
     opacity: 0.8;
     transition: 0.3s;
 }
-.apple-logo-imgs:hover{
+
+.apple-logo-imgs:hover {
     opacity: 1;
 }
 
@@ -49,33 +51,46 @@
     clip: rect(1px, 1px, 1px, 1px);
     overflow: hidden;
 }
-.nav-pc{
+
+.header-nav {
+    display: flex;
+}
+
+.nav-pc {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+
 }
+
 .nav-pc li {
     display: flex;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 22px;
     font-size: 12px;
     font-weight: 400;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
-.nav-pc li a{
+
+.nav-pc li a {
     opacity: 0.8;
     color: var(--main-white);
     transition: 0.3s;
+    font-size: 10px;
+
 }
-.nav-pc li a:hover{
+
+.nav-pc li a:hover {
     opacity: 1;
 }
-.nav-search{
-	background: url('../imgs/globalnav_search_image__cbllq1gkias2_large.svg') no-repeat 0 -15px;
-	width: 14px;
-	height: 14px;
+
+.nav-search {
+    background: url('../imgs/globalnav_search_image__cbllq1gkias2_large.svg') no-repeat 0 -15px;
+    width: 14px;
+    height: 14px;
 }
-.shopping-bag{
+
+.shopping-bag {
     background: url(../imgs/globalnav_bag_image__yzte50i47ciu_large.svg) no-repeat;
     width: 29px;
     height: 44px;
@@ -83,13 +98,136 @@
     background-position: center center;
     overflow: hidden;
 }
+
 #items-menu {
     display: flex;
     background-color: var(--main-black);
+    height: 110px;
+    max-width: 1000vh;
+    margin: 0 auto;
 }
-#items-menu ul 
+
+#items-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+#items-menu ul li {
+    padding-right: 30px;
+}
+
+#items-menu ul li a {
+    color: var(--nav-white);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#items-menu ul li a figure {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#items-menu ul li a ol {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 7px;
+}
+#items-menu ul li a:hover{
+    color: var(--nav-hover-blue);
+}
+
+
 .ipad-pro {
-    background: url(../imgs/ipadpro_dark__175htbn6m76u_large.svg) no-repeat;
+    background: url(../imgs/ipadpro_dark__175htbn6m76u_large.svg) no-repeat center;
     width: 41px;
     height: 54px;
+    display: flex;
+}
+
+.ipad-air {
+    background: url(../imgs/ipadair_dark__gi1t1iqta1yu_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+}
+
+.ipad {
+    background: url(../imgs/ipad_dark__fe8ocv9hktim_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+}
+
+.ipad-mini {
+    background: url(../imgs/ipadmini_dark__cdfcygd422uu_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+}
+.compare{
+    background: url(../imgs/ipad_compare_dark__cxllw9w1tuy6_large.svg) no-repeat center;
+    width: 45px;
+    height: 54px;
+}
+.apple-pencil{
+    background: url(../imgs/apple_pencil_dark__c42qcvi9e802_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+    
+}
+.keyboard{
+    background: url(../imgs/keyboard_dark__dtedyad0xnqu_large.svg) no-repeat center;
+    width: 63px;
+    height: 54px;
+}
+.airpots{
+    background: url(../imgs/airpods_dark__ccoezo86z37m_large.svg) no-repeat center;
+    width: 27px;
+    height: 54px;
+}
+.accessories{
+    background: url(../imgs/ipad_acc_dark__bo0a4ftei9au_large.svg) no-repeat center;
+    width: 31px;
+    height: 54px;
+}
+.ipad-os{
+    background: url(../imgs/ipados_dark__emr7k8pfle4i_large.svg) no-repeat center;
+    width: 32px;
+    height: 54px;
+}
+.ipad-shopping {
+    background: url(../imgs/shop_ipad_dark__ekfl60g78g4m_large.svg) no-repeat center;
+    width: 66px;
+    height: 54px;
+}
+span {
+    color: #f56300;
+    display: block;
+    font-size: 10px;
+    padding-top: 2px;
+}
+/* main css시작 */
+.main-article {
+    background-color: var(--main-black);
+    width:100%;
+    margin: 0 auto;
+    max-width: 1000vh;
+}
+.container {
+    color: var(--main-white);
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+.main-ipad-imgs {
+    background: url(../imgs/ipad_air__d794tkovmk02_large.jpg) no-repeat center center;
+    width: 680px;
+    height: 698px;
+    display: block;
 }
