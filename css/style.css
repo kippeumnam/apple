@@ -2,6 +2,7 @@
     /* nav */
     --nav-hover-blue: #06c;
     --nav-white: #f5f5f7;
+    --nav-black: #1D1D1F;
     /* main */
     --main-black: #000;
     --main-white: #fff;
@@ -15,13 +16,80 @@
     --footer-black: #1D1D1F;
     --footer: #424245;
 }
-*{
-    background-color: #06c;
 
+.header-container {
+    display: flex;
+    max-width:1000vh;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #313132;
+    height: 44px;
 }
 .apple-logo-imgs {
-    background-size: 14px 44px;
+    width: 14px;
+    height: 44px;
     background-image: url(../imgs/globalnav_apple_image__b5er5ngrzxqq_large.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    padding: 10px 70px 10px 0;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.apple-logo-imgs:hover{
+    opacity: 1;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+.nav-pc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-pc li {
+    display: flex;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-right: 30px;
+}
+.nav-pc li a{
+    opacity: 0.8;
+    color: var(--main-white);
+    transition: 0.3s;
+}
+.nav-pc li a:hover{
+    opacity: 1;
+}
+.nav-search{
+	background: url('../imgs/globalnav_search_image__cbllq1gkias2_large.svg') no-repeat 0 -15px;
+	width: 14px;
+	height: 14px;
+}
+.shopping-bag{
+    background: url(../imgs/globalnav_bag_image__yzte50i47ciu_large.svg) no-repeat;
+    width: 29px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+#items-menu {
+    display: flex;
+    background-color: var(--main-black);
+}
+#items-menu ul 
+.ipad-pro {
+    background: url(../imgs/ipadpro_dark__175htbn6m76u_large.svg) no-repeat;
+    width: 41px;
+    height: 54px;
 }
