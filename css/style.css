@@ -215,11 +215,14 @@ span {
     padding: 2px 0 5px 0;
 }
 /* main css시작 */
-.article-container {
-    background-color: var(--main-black);
-    /* 여기 어려워요 margin 0 auto */
+section{
+    background-color: #f5f5f7;
 }
 .main-article {
+background-color: var(--main-black);
+/* 여기 어려워요 margin 0 auto */
+}
+.article-container {
     color: var(--main-white);
     width: 1200px;
     justify-content: center;
@@ -293,7 +296,43 @@ button {
     text-align: center;
     font-weight: 600;
 }
+.ipad-pro-imgs{
+    background: url(../imgs/ipad_pro_hero__bh3eq6sqfjw2_large.jpg) no-repeat center center;
+    width: 1335px;
+    height: 598px;
+    display: flex;
+    /* margin-left: 20px;
+    padding: 0 0 150px 0; */
+}
 
+.sec-article{
+    background-color: #fff;
+    margin-top: 15px;
+}
+.sec-article-container {
+    color: var(--main-white);
+    width: 1400px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-left : auto; 
+}
+.sec-text-container{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    color: var(--footer-black);
+}
+.test {
+    width: 800px;
+    padding: 50px 0 50px 0;
+    margin: 0 auto;
+} 
+.sec-text-container .more::after {
+    left: 170px;
+}
 /* 
 전체를 묶어주는 거 하나 백그라운드 칼라를 주기위한 컬러, 컨테이너 공간 중앙에 하나 왼 쪽 그림영역 텍스트영역, 오버플로우 히든을 왼쪽그림에는x  */
 /* 삼중 으로 실제 컨텐츤 ㄴ들어가는거하나 */
