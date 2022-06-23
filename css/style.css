@@ -9,7 +9,8 @@
     /* main */
     --main-black: #000;
     --main-white: #fff;
-    --button-blue: #0071E3 --more: #2997ff
+    --button-blue: #0071E3;
+    --more: #2997ff;
         /* article */
         --arcticle-black: #1D1D1F --arcticle-more:#0066cc
         /* footer */
@@ -18,14 +19,16 @@
     --footer: #424245;
 }
 /* nav 시작 */
+#apple-menu-bar{
+    background-color: #313132;
+}
 .header-container {
     display: flex;
-    max-width: 1000vh;
+    width: 996px;
     flex-direction: row;
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #313132;
     height: 44px;
 }
 .apple-logo-imgs {
@@ -35,9 +38,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
-    /* padding: 10px 0 10px 0; */
     opacity: 0.8;
-    transition: 0.3s;
 }
 
 .apple-logo-imgs:hover {
@@ -67,8 +68,6 @@
     display: flex;
     padding-left: 20px;
     padding-right: 22px;
-    font-size: 12px;
-    font-weight: 400;
     /* padding-right: 30px; */
 }
 
@@ -76,8 +75,9 @@
     opacity: 0.8;
     color: var(--main-white);
     transition: 0.3s;
-    font-size: 10px;
-
+    transition-property: opacity;
+    /* property 이것만 하겠다 */
+    font-size: 11px;
 }
 
 .nav-pc li a:hover {
@@ -98,12 +98,14 @@
     background-position: center center;
     overflow: hidden;
 }
-
 #items-menu {
-    display: flex;
     background-color: var(--main-black);
+}
+
+#items-menu ul {
+    display: flex;
     height: 110px;
-    max-width: 1000vh;
+    width: 1584px;
     margin: 0 auto;
 }
 
@@ -210,25 +212,89 @@ span {
     color: #f56300;
     display: block;
     font-size: 10px;
-    padding-top: 2px;
+    padding: 2px 0 5px 0;
 }
 /* main css시작 */
-.main-article {
+.article-container {
     background-color: var(--main-black);
-    width:100%;
-    margin: 0 auto;
-    max-width: 1000vh;
     /* 여기 어려워요 margin 0 auto */
 }
-.container {
+.main-article {
     color: var(--main-white);
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center; */
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
 }
 .main-ipad-imgs {
     background: url(../imgs/ipad_air__d794tkovmk02_large.jpg) no-repeat center center;
     width: 680px;
     height: 698px;
-    display: block;
+    margin-left: 20px;
+    padding: 0 0 150px 0;
 }
+.main-text-container {
+margin-right: 40px;
+}
+.ipad-heading{
+    font-size: 56px;
+    font-weight: 600;
+}
+.air-imgs{
+    background: url(../imgs/air_script__coyet2g7gkia_large.png) no-repeat;
+    width: 88px;
+    height: 46px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.ipad-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
+    margin:17px 0px 20px 0;
+    line-height: 38px;
+}
+.ipad-price{
+    font-size: 17px;
+    margin: 0 0 15px 0;
+}
+.more{
+    font: 17px;
+    margin: 20px 0 0 0;
+    position: relative;
+    /* 부모태그에 랠러티브 */
+}
+.more a {
+    color: var(--more);
+}
+.more::after {
+    position: absolute;
+    left: 158px; 
+    top: 5px;
+    content: '';
+    width: 5px;
+    height: 5px; 
+    border-top: 1px solid var(--more);
+    border-right: 1px solid var(--more); 
+    transform: rotate(45deg);
+}
+button {
+    background-color: var(--button-blue);
+    color: #fff;
+    border-radius: 42.85px;
+    border: none;
+    font-size: 17px;
+    padding: 7px 13px 7px 13px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* 
+전체를 묶어주는 거 하나 백그라운드 칼라를 주기위한 컬러, 컨테이너 공간 중앙에 하나 왼 쪽 그림영역 텍스트영역, 오버플로우 히든을 왼쪽그림에는x  */
+/* 삼중 으로 실제 컨텐츤 ㄴ들어가는거하나 */
+/* 네브 크기 다시 지정해주기  */
