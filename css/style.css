@@ -218,6 +218,7 @@ span {
     width:100%;
     margin: 0 auto;
     max-width: 1000vh;
+    /* 여기 어려워요 margin 0 auto */
 }
 .container {
     color: var(--main-white);
