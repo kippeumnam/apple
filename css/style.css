@@ -215,7 +215,7 @@ span {
     padding: 2px 0 5px 0;
 }
 /* main css시작 */
-section{
+main{
     background-color: #f5f5f7;
 }
 .main-article {
@@ -325,7 +325,7 @@ button {
     left: 28%;
     color: var(--footer-black);
 }
-.test {
+.sec-article-right {
     width: 800px;
     padding: 50px 0 50px 0;
     margin: 0 auto;
@@ -333,6 +333,87 @@ button {
 .sec-text-container .more::after {
     left: 170px;
 }
+.thi-article{
+    background-color: var(--main-white);
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+.thi-article-center{
+    width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.thi-article-right{
+    width: 800px;
+    margin-left: auto;
+}
+.thi-text-container{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ipad-imgs{
+    background: url(../imgs/ipad_10_2__7yowwyyrbmaa_large.jpg) no-repeat bottom;
+    width: 900px;
+    height: 700px;
+    display: flex;
+}
+.thi-text-container .more::after{
+    left: 90px;
+}
+.four-article {
+    background-color: var(--main-white);
+    margin: 15px 0 15px 0;
+    padding-top: 100px;
+}
+.four-article-center{
+    width: 1300px;
+    margin: 0 auto;
+}
+.four-article-left {
+    width: 800px;
+    margin-left: 20%;
+    position: relative;
+
+}
+.ipad-mini-imgs {
+    background: url(../imgs/ipad_mini__dn6g8b0hw8om_large.jpg) no-repeat;
+    width: 503px;
+    height: 579px;
+}
+.four-text-container{
+    position: absolute;
+    text-align: center;
+    right: 12%;
+    top: 13%;
+}
+.mini-imgs{
+    background: url(../imgs/mini_script__bjahejz6luqa_large.png) no-repeat;
+    width: 103px;
+    height: 41px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.four-text-container .more::after{
+    left: 166px;
+}
+.sec-section{
+    background-color: var(--main-white);
+    margin: 30px 30px 15px 30px;
+    padding-top: 100px;
+}
+.article-align h2 {
+    text-align: center;
+}
+.graph-aritcle-container {}
+
 /* 
 전체를 묶어주는 거 하나 백그라운드 칼라를 주기위한 컬러, 컨테이너 공간 중앙에 하나 왼 쪽 그림영역 텍스트영역, 오버플로우 히든을 왼쪽그림에는x  */
 /* 삼중 으로 실제 컨텐츤 ㄴ들어가는거하나 */
