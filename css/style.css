@@ -1,6 +1,6 @@
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-    }
+    } */
 :root {
     /* nav */
     --nav-hover-blue: #06c;
@@ -59,18 +59,12 @@
 
 .nav-pc {
     display: flex;
+    width: 910px;
+    margin: 0 20px 0 20px;
     flex-direction: row;
     align-items: center;
-
+    justify-content: space-between;
 }
-
-.nav-pc li {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 22px;
-    /* padding-right: 30px; */
-}
-
 .nav-pc li a {
     opacity: 0.8;
     color: var(--main-white);
@@ -301,8 +295,7 @@ button {
     width: 1335px;
     height: 598px;
     display: flex;
-    /* margin-left: 20px;
-    padding: 0 0 150px 0; */
+
 }
 
 .sec-article{
@@ -329,6 +322,7 @@ button {
     width: 800px;
     padding: 50px 0 50px 0;
     margin: 0 auto;
+    overflow: hidden;
 } 
 .sec-text-container .more::after {
     left: 170px;
