@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -108,8 +109,8 @@
     </nav>
     <main>
         <section>
-                        <!-- 수정한부분 -->
-            <h1 class="ipad-heading"><span class="hidden">iPad</span></h1>
+            <!-- 수정한부분 -->
+            <h1 class="hidden">iPad</h1>
             <article class="main-article">
                 <div class="article-container">
                     <div class="main-text-container">
@@ -158,7 +159,7 @@
                         <div class="four-text-container">
                             <h2 class="ipad-heading">iPad</h2>
                             <span class="hidden">mini</span>
-                                        <!-- 수정한부분 -->
+                            <!-- 수정한부분 -->
                             <figure class="mini-imgs"></figure>
                             <p class="ipad-text">메가급 성능.<br>크기만 미니.</p>
                             <p class="ipad-price"> &#8361;649,000부터</p>
@@ -171,11 +172,12 @@
             </article>
         </section>
         <section class="sec-section">
-            <!-- 수정한부분 -->
-            <h2 class="hidden">search ipad</h2>
+            <h2 class="ipad-heading">당신에게 맞는 iPad는?</h2>
             <article class="article-align">
                 <div class="graph-aritcle-container">
-                    <h2 class="ipad-heading">당신에게 맞는 iPad는?</h2>
+                    <!-- 양 쭐이기 아티클 무조건x 반복되는 컨텐츠 -->
+                    <!-- 컨테이너 이미지로 하나 감싸주는게좋음 css -->
+                    <!-- 텍스트 따로 묶어줄 필요 X -->
                     <div>
                         <figure class="sec-ipad-pro"></figure>
                         <figure class="ipad-pro-color"></figure>
@@ -274,7 +276,9 @@
         <nav id="footer-nav">
             <!-- 수정한부분 -->
             <ul>
-                <li><figure class="apple-logo-imgs"></figure></li>
+                <li>
+                    <figure class="apple-logo-imgs"></figure>
+                </li>
                 <li>iPad</li>
             </ul>
             <div class="footer-nav-heading">
