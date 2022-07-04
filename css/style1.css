@@ -1,0 +1,414 @@
+/* ::-webkit-scrollbar {
+    display: none;
+    } */
+:root {
+    /* nav */
+    --nav-hover-blue: #06c;
+    --nav-white: #f5f5f7;
+    --nav-black: #1D1D1F;
+    /* main */
+    --main-black: #000;
+    --main-white: #fff;
+    --button-blue: #0071E3;
+    --more: #2997ff;
+        /* article */
+        --arcticle-black: #1D1D1F --arcticle-more:#0066cc
+        /* footer */
+        --footer-policy: #6E6E73;
+    --footer-black: #1D1D1F;
+    --footer: #424245;
+}
+/* nav 시작 */
+#apple-menu-bar{
+    background-color: #313132;
+}
+.header-container {
+    display: flex;
+    width: 996px;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 44px;
+}
+.apple-logo-imgs {
+    width: 14px;
+    height: 44px;
+    background-image: url(../imgs/globalnav_apple_image__b5er5ngrzxqq_large.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    opacity: 0.8;
+}
+
+.apple-logo-imgs:hover {
+    opacity: 1;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.nav-pc {
+    display: flex;
+    width: 910px;
+    margin: 0 20px 0 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-pc li a {
+    opacity: 0.8;
+    color: var(--main-white);
+    transition: 0.3s;
+    transition-property: opacity;
+    /* property 이것만 하겠다 */
+    font-size: 11px;
+}
+
+.nav-pc li a:hover {
+    opacity: 1;
+}
+
+.nav-search {
+    background: url('../imgs/globalnav_search_image__cbllq1gkias2_large.svg') no-repeat 0 -15px;
+    width: 14px;
+    height: 14px;
+}
+
+.shopping-bag {
+    background: url(../imgs/globalnav_bag_image__yzte50i47ciu_large.svg) no-repeat;
+    width: 29px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+#items-menu {
+    background-color: var(--main-black);
+}
+
+#items-menu ul {
+    display: flex;
+    height: 110px;
+    width: 1584px;
+    margin: 0 auto;
+}
+
+#items-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+#items-menu ul li {
+    padding-right: 30px;
+}
+
+#items-menu ul li a {
+    color: var(--nav-white);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#items-menu ul li a figure {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#items-menu ul li a ol {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding-top: 7px;
+}
+#items-menu ul li a:hover{
+    color: var(--nav-hover-blue);
+}
+
+
+.ipad-pro {
+    background: url(../imgs/ipadpro_dark__175htbn6m76u_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+    display: flex;
+}
+
+.ipad-air {
+    background: url(../imgs/ipadair_dark__gi1t1iqta1yu_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+}
+
+.ipad {
+    background: url(../imgs/ipad_dark__fe8ocv9hktim_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+}
+
+.ipad-mini {
+    background: url(../imgs/ipadmini_dark__cdfcygd422uu_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+}
+.compare{
+    background: url(../imgs/ipad_compare_dark__cxllw9w1tuy6_large.svg) no-repeat center;
+    width: 45px;
+    height: 54px;
+}
+.apple-pencil{
+    background: url(../imgs/apple_pencil_dark__c42qcvi9e802_large.svg) no-repeat center;
+    width: 41px;
+    height: 54px;
+    
+}
+.keyboard{
+    background: url(../imgs/keyboard_dark__dtedyad0xnqu_large.svg) no-repeat center;
+    width: 63px;
+    height: 54px;
+}
+.airpots{
+    background: url(../imgs/airpods_dark__ccoezo86z37m_large.svg) no-repeat center;
+    width: 27px;
+    height: 54px;
+}
+.accessories{
+    background: url(../imgs/ipad_acc_dark__bo0a4ftei9au_large.svg) no-repeat center;
+    width: 31px;
+    height: 54px;
+}
+.ipad-os{
+    background: url(../imgs/ipados_dark__emr7k8pfle4i_large.svg) no-repeat center;
+    width: 32px;
+    height: 54px;
+}
+.ipad-shopping {
+    background: url(../imgs/shop_ipad_dark__ekfl60g78g4m_large.svg) no-repeat center;
+    width: 66px;
+    height: 54px;
+}
+span {
+    color: #f56300;
+    display: block;
+    font-size: 10px;
+    padding: 2px 0 5px 0;
+}
+/* main css시작 */
+main{
+    background-color: #f5f5f7;
+}
+.main-article {
+background-color: var(--main-black);
+/* 여기 어려워요 margin 0 auto */
+}
+.article-container {
+    color: var(--main-white);
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+.main-ipad-imgs {
+    background: url(../imgs/ipad_air__d794tkovmk02_large.jpg) no-repeat center center;
+    width: 680px;
+    height: 698px;
+    margin-left: 20px;
+    padding: 0 0 150px 0;
+}
+.main-text-container {
+margin-right: 40px;
+}
+.ipad-heading{
+    font-size: 56px;
+    font-weight: 600;
+}
+.air-imgs{
+    background: url(../imgs/air_script__coyet2g7gkia_large.png) no-repeat;
+    width: 88px;
+    height: 46px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.ipad-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 600;
+    margin:17px 0px 20px 0;
+    line-height: 38px;
+}
+.ipad-price{
+    font-size: 17px;
+    margin: 0 0 15px 0;
+}
+.more{
+    font: 17px;
+    margin: 20px 0 0 0;
+    position: relative;
+    /* 부모태그에 랠러티브 */
+}
+.more a {
+    color: var(--more);
+}
+.more::after {
+    position: absolute;
+    left: 158px; 
+    top: 5px;
+    content: '';
+    width: 5px;
+    height: 5px; 
+    border-top: 1px solid var(--more);
+    border-right: 1px solid var(--more); 
+    transform: rotate(45deg);
+}
+button {
+    background-color: var(--button-blue);
+    color: #fff;
+    border-radius: 42.85px;
+    border: none;
+    font-size: 17px;
+    padding: 7px 13px 7px 13px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+}
+.ipad-pro-imgs{
+    background: url(../imgs/ipad_pro_hero__bh3eq6sqfjw2_large.jpg) no-repeat center center;
+    width: 1335px;
+    height: 598px;
+    display: flex;
+
+}
+
+.sec-article{
+    background-color: #fff;
+    margin-top: 15px;
+}
+.sec-article-container {
+    color: var(--main-white);
+    width: 1400px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-left : auto; 
+}
+.sec-text-container{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    color: var(--footer-black);
+}
+.sec-article-right {
+    width: 800px;
+    padding: 50px 0 50px 0;
+    margin: 0 auto;
+    overflow: hidden;
+} 
+.sec-text-container .more::after {
+    left: 170px;
+}
+.thi-article{
+    background-color: var(--main-white);
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+.thi-article-center{
+    width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.thi-article-right{
+    width: 800px;
+    margin-left: auto;
+}
+.thi-text-container{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ipad-imgs{
+    background: url(../imgs/ipad_10_2__7yowwyyrbmaa_large.jpg) no-repeat bottom;
+    width: 900px;
+    height: 700px;
+    display: flex;
+}
+.thi-text-container .more::after{
+    left: 90px;
+}
+.four-article {
+    background-color: var(--main-white);
+    margin: 15px 0 15px 0;
+    padding-top: 100px;
+}
+.four-article-center{
+    width: 1300px;
+    margin: 0 auto;
+}
+.four-article-left {
+    width: 800px;
+    margin-left: 20%;
+    position: relative;
+
+}
+.ipad-mini-imgs {
+    background: url(../imgs/ipad_mini__dn6g8b0hw8om_large.jpg) no-repeat;
+    width: 503px;
+    height: 579px;
+}
+.four-text-container{
+    position: absolute;
+    text-align: center;
+    right: 12%;
+    top: 13%;
+}
+.mini-imgs{
+    background: url(../imgs/mini_script__bjahejz6luqa_large.png) no-repeat;
+    width: 103px;
+    height: 41px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.four-text-container .more::after{
+    left: 166px;
+}
+.sec-section{
+    background-color: var(--main-white);
+    margin: 30px 30px 15px 30px;
+    padding-top: 100px;
+}
+.article-align h2 {
+    text-align: center;
+}
+.graph-aritcle-container {}
+
+/* 
+전체를 묶어주는 거 하나 백그라운드 칼라를 주기위한 컬러, 컨테이너 공간 중앙에 하나 왼 쪽 그림영역 텍스트영역, 오버플로우 히든을 왼쪽그림에는x  */
+/* 삼중 으로 실제 컨텐츤 ㄴ들어가는거하나 */
+/* 네브 크기 다시 지정해주기  */
