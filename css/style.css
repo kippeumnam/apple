@@ -274,7 +274,7 @@
     }
     .more::after {
         position: absolute;
-        left: 158px; 
+        left: 176px; 
         top: 5px;
         content: '';
         width: 5px;
@@ -305,18 +305,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
 }
 .sec-text-container {
     color:#1D1D1F;
     order: 2;
-    /* display: flex; */
+    margin-top: -150px;
 }
 .ipad-pro-imgs-container{
-    width:500px;
+    width:297px;
     display: flex;
     order: 1;
-
+    margin: 100px 0 100px 0;
 }
 .ipad-pro-imgs {
     background: url(../imgs/ipad_pro_hero__bh3eq6sqfjw2_large.jpg) no-repeat;
@@ -325,3 +324,4 @@
     flex-shrink: 0;
     overflow: hidden;
 }
+/* 줄였을때 아이패드에어 양옆 정렬 변경 */
